@@ -1,12 +1,12 @@
 # gulp tasks for Joomla 3 Theme Development
-This gulp file is for [Joomla](https://joomla.org) 3 Theme development. It contains simple tasks for template customizing starting with the core Protostar template in Joomla 3 or for building your own themes using the core jui bootstrap less files. This gulpfile was put together using the [Joomla Tools Vagrant Box](http://developer.joomlatools.com/tools/vagrant.html) and [Virtual Box](https://www.virtualbox.org/) as the development enviroment. You will find that I reference this enviroment in the readme however this environment is not required. The gulpfile can be tweaked to work in any dev enviroment.
+This gulp file is for [Joomla](https://joomla.org) 3 Theme development. It contains simple tasks for template customizing starting with the core Protostar template in Joomla 3 or for building your own themes using the core jui bootstrap less files. This gulpfile was put together using the [Joomla Tools Vagrant Box](http://developer.joomlatools.com/tools/vagrant.html) and [Virtual Box](https://www.virtualbox.org/) as the development environment. You will find that I reference this enviroment in the readme however this environment is not required. The gulpfile can be tweaked to work in any dev enviroment.
 
 ## Requirements
 Requires [Node](https://nodejs.org/en/), [NPM](https://www.npmjs.com/), [Gulp](http://gulpjs.com/) and a [Joomla 3.4.x](http://joomlacode.org/gf/project/joomla/frs/) installation to be installed on your dev environment. 
 ### Recommended
-Recommended development enviroment to make things easy, vagrant box [joomlatools/box](https://github.com/joomlatools/joomla-vagrant). [Joomla Tools Documentation here](http://developer.joomlatools.com/tools/vagrant/getting-started.html) on how to get setup, run commands, etc. [Vagrant Documentation](https://www.vagrantup.com/). 
+Recommended development environment to make things easy, vagrant box [joomlatools/box](https://github.com/joomlatools/joomla-vagrant). [Joomla Tools Documentation here](http://developer.joomlatools.com/tools/vagrant/getting-started.html) on how to get setup, run commands, etc. [Vagrant Documentation](https://www.vagrantup.com/). 
 
-At the time of this writing the Joomla Tools Vagrant Box has Node 0.10.37 and NPM 1.4.28 which is lower then the wanted version. Lets update node on this box. SSH into the vagrant box and run:
+Assuming you have the Joomla Tools Box setup and running then this directly applies. At the time of this writing the Joomla Tools Vagrant Box has Node 0.10.37 and NPM 1.4.28 which is lower then the wanted version. Lets update node on this box. SSH into the vagrant box and run:
 ```sh
 $ curl -sL https://deb.nodesource.com/setup_0.12 | sudo -E bash -
 $ sudo apt-get install -y nodejs
